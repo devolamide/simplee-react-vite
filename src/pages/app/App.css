@@ -1,0 +1,8 @@
+.card-parent {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+.app {
+  padding-bottom: 200px;
+}

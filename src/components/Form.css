@@ -1,0 +1,19 @@
+.form-item {
+  margin-bottom: 9px;
+  max-width: 450px;
+}
+input {
+  height: 40px;
+  width: 100%;
+}
+
+.form-input-pswd {
+  position: relative;
+}
+
+.pswd-toggle {
+  position: absolute;
+  top: 7.5px;
+  right: 5px;
+  cursor: pointer;
+}

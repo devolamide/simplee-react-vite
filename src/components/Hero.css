@@ -1,0 +1,108 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-block: 6rem;
+  padding-inline: 8rem;
+
+  background-color: var(--color-primary-900);
+  background:
+    var(--gradient-overlay),
+    url(https://images.unsplash.com/photo-1710770563074-6d9cc0d3e338?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+      center/cover no-repeat;
+}
+/* The ::before method can be easier because the overlay becomes its own layer and can be changed without touching the background image. */
+.hero__content,
+.hero__card {
+  position: relative;
+  z-index: 1;
+}
+/* 12px ÷ 10 = 1.2rem */
+.hero__label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-300);
+}
+/* 48px ÷ 10 = 4.8rem */
+.hero__title {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-primary-500);
+}
+/* 18px ÷ 10 = 1.8rem */
+.hero__subtitle {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: hsl(0, 0%, 92%);
+}
+/* font-weight only */
+.hero__highlight {
+  font-weight: 700;
+  color: var(--color-primary-500);
+}
+/* Shared button styles */
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+/* Primary button */
+.btn--primary {
+  background: var(--gradient-primary);
+  color: var(--color-primary-900);
+}
+.btn--primary:hover {
+  background: linear-gradient(135deg, hsl(51, 90%, 55%), hsl(51, 95%, 75%));
+}
+/* Outline button */
+.btn--outline {
+  background: transparent;
+  border: 2px solid var(--color-primary-300);
+  color: var(--color-primary-300);
+}
+.btn--outline:hover {
+  background: var(--color-primary-300);
+  color: var(--color-primary-900);
+}
+/* Glass morphism card */
+.hero__card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--glass-border);
+
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+  min-width: 26rem;
+}
+/* 12px ÷ 10 = 1.2rem */
+.hero__card-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-300);
+}
+/* 32px ÷ 10 = 3.2rem */
+.hero__card-date {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+/* Card list styles */
+.hero__card-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  color: hsl(0, 0%, 95%);
+}

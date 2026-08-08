@@ -1,0 +1,11 @@
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background: var(--gradient-primary);
+  color: var(--color-primary-900);
+}

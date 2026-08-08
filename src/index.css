@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  /* Primary Color Palette */
+  --color-primary-900: hsl(51, 90%, 15%);
+  --color-primary-700: hsl(51, 85%, 25%);
+  --color-primary-500: hsl(51, 90%, 45%);
+  --color-primary-300: hsl(51, 95%, 65%);
+  --color-primary-100: hsl(51, 100%, 90%);
+
+  /* Semantic Colors */
+  --color-success: hsl(145, 90%, 51%);
+  --color-warning: hsl(35, 95%, 55%);
+  --color-error: hsl(0, 98%, 52%);
+  /* Transparency Colors */
+  --overlay-dark: hsla(0, 0%, 0%, 0.6);
+  --overlay-brand: hsla(51, 90%, 45%, 0.25);
+  --glass-bg: hsla(0, 0%, 100%, 0.12);
+  --glass-border: hsla(0, 0%, 100%, 0.18);
+  /* Gradient Variables */
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(51, 90%, 45%),
+    hsl(51, 95%, 65%)
+  );
+  --gradient-overlay: linear-gradient(
+    90deg,
+    transparent,
+    hsla(51, 90%, 15%, 0.55)
+  );
+  /* Font Stack */
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Arial", sans-serif;
+}
+body {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--color-primary-900);
+}
