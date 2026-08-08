@@ -74,7 +74,7 @@ function App() {
           <SomethingElse updateCounter={updateCounter} />
           <BackendData />
           <Spinner />
-          <Form />
+          {/* <Form /> */}
         </Layout>
       </div>
     </AppContext>
