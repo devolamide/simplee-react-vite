@@ -21,6 +21,9 @@ function ColorSchemesExample() {
           <Nav.Link href="#features">
             <Link to="/form">Form</Link>
           </Nav.Link>
+          <Nav.Link href="#features">
+            <Link to="/data-page">Data Page</Link>
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>
