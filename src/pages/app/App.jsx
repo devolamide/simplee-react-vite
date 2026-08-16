@@ -1,12 +1,6 @@
 import "./App.css";
-import MainHero from "../../components/Hero";
 import Card from "../../components/Card";
-import Layout from "../../components/Layout";
 import SomethingElse from "../../components/HomePageButton";
-import { AppDataContext as AppContext } from "../../context/AppDataContext";
-import BackendData from "../../components/BackendData";
-import { Spinner } from "../../components/Spinner";
-import Form from "../../components/Form";
 
 function App() {
   const cardData = [
@@ -62,22 +56,14 @@ function App() {
   }
 
   return (
-    <AppContext value={{ appName: "Class 26 App", version: "1.0" }}>
-      <div className="app">
-        <Layout>
-          <MainHero />
-          <div className="card-parent">
-            {cardData.map((eachData, index) => (
-              <Card cardData={eachData} key={index} />
-            ))}
-          </div>
-          <SomethingElse updateCounter={updateCounter} />
-          <BackendData />
-          <Spinner />
-          {/* <Form /> */}
-        </Layout>
+    <div className="app">
+      <div className="card-parent">
+        {cardData.map((eachData, index) => (
+          <Card cardData={eachData} key={index} />
+        ))}
       </div>
-    </AppContext>
+      <SomethingElse updateCounter={updateCounter} />
+    </div>
   );
 }
 
