@@ -10,12 +10,6 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(),
   ],
-  build: {
-    ssr: true,
-    rollupOptions: {
-      input: "./server/index.js",
-    },
-  },
   resolve: {
     alias: {
       "~": "/src", // import Button from "@/components/Button"
