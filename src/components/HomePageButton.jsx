@@ -30,6 +30,7 @@ export default function HomePageButton({ updateCounter }) {
   return (
     <>
       <div>
+        <label htmlFor="name">Full Name</label>
         <input
           name="name"
           value={inputValue}

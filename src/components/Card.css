@@ -2,7 +2,7 @@
   width: 90%;
   max-width: 340px;
   margin: 0 auto;
-  border: 1px solid #d1d7dc;
+  border: 1px solid #000;
 }
 .brdr-radius {
   border-radius: 8px;
@@ -84,7 +84,7 @@ p {
 
 .card__highlight {
   font-weight: bold;
-  color: #b4690e;
+  color: #ff0000;
   /* .card__highlight wins because it is a direct class selection on the span, 
        while color on .card__description is inherited by the span. */
 }

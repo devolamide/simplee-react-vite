@@ -6,3 +6,8 @@
 .app {
   padding-bottom: 200px;
 }
+a {
+  color: black;
+  font-size: 120%;
+  padding: 4px 10px;
+}
