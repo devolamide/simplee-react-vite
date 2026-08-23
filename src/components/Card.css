@@ -3,8 +3,14 @@
   max-width: 340px;
   margin: 0 auto;
   border: 1px solid #d1d7dc;
+}
+.brdr-radius {
   border-radius: 8px;
+}
+.ovf-hidden {
   overflow: hidden;
+}
+.bg-white {
   background-color: #ffffff;
 }
 

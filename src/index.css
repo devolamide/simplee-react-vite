@@ -1,8 +1,24 @@
+@import "tailwindcss";
+
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
+}
+.btn {
+
+}
+.btn:hover {
+  
+}
+@theme {
+  --color-primary-900: hsl(51, 90%, 15%);
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(51, 90%, 45%),
+    hsl(51, 95%, 65%)
+  );
 }
 :root {
   /* Primary Color Palette */

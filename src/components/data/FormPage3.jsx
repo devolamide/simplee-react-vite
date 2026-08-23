@@ -29,8 +29,7 @@ function Form() {
   const onSubmitClick = async (e) => {
     try {
       e.preventDefault();
-      const isValid = await formSchema.validate(form);
-      if (!isValid) setError({ error: false, messgae: "" });
+      await formSchema.validate(form);
       // add data to global state
       // submit entire form data from global state
       // navigate("/hero");
@@ -51,7 +50,11 @@ function Form() {
 
   const formSchema = Yup.object({
     password: Yup.string().required(),
-    retypePassword: Yup.string().required(),
+    retypePassword: Yup.string()
+      .test("notSameAsUser", "Password cannot match user ID", (value) => {
+        return value === form.password;
+      })
+      .required(),
   });
 
   const handlePrev = () => {
