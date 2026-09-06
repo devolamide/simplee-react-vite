@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import {Link} from 'react-router'
+=======
 import { Link } from 'react-router'
+>>>>>>> main
 
 function ColorSchemesExample() {
   return (
@@ -8,6 +12,21 @@ function ColorSchemesExample() {
           <Link to="/">Navbar</Link>
           <div className="me-auto">
             <Link to="/">
+<<<<<<< HEAD
+              Home
+            </Link>
+            <Link to="/hero">
+              Hero
+            </Link>
+            <Link to="/backend-data">
+              Backend Data
+            </Link>
+            <Link to="/form">
+              Form
+            </Link>
+            <Link to="/data-page">
+              Data Page
+=======
               <span>Home</span>
             </Link>
             <Link to="/hero">
@@ -21,6 +40,7 @@ function ColorSchemesExample() {
             </Link>
             <Link to="/data-page">
               <span>Data Page</span>
+>>>>>>> main
             </Link>
           </div>
         </div>
