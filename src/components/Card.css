@@ -84,7 +84,7 @@ p {
 
 .card__highlight {
   font-weight: bold;
-  color: #ff0000;
+  color: #5900FF;
   /* .card__highlight wins because it is a direct class selection on the span, 
        while color on .card__description is inherited by the span. */
 }

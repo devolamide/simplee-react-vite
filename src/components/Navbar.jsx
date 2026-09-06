@@ -1,25 +1,27 @@
+import {Link} from 'react-router'
+
 function ColorSchemesExample() {
   return (
     <div>
       <div>
         <div>
-          <a href="#home">Navbar</a>
+          <Link to="/">Navbar</Link>
           <div className="me-auto">
-            <a href="#home">
-              <span to="/">Home</span>
-            </a>
-            <a href="#features">
-              <span to="/hero">Hero</span>
-            </a>
-            <a href="#features">
-              <span to="/backend-data">Backend Data</span>
-            </a>
-            <a href="#features">
-              <span to="/form">Form</span>
-            </a>
-            <a href="#features">
-              <span to="/data-page">Data Page</span>
-            </a>
+            <Link to="/">
+              Home
+            </Link>
+            <Link to="/hero">
+              Hero
+            </Link>
+            <Link to="/backend-data">
+              Backend Data
+            </Link>
+            <Link to="/form">
+              Form
+            </Link>
+            <Link to="/data-page">
+              Data Page
+            </Link>
           </div>
         </div>
       </div>

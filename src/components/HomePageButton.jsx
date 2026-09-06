@@ -32,6 +32,7 @@ export default function HomePageButton({ updateCounter }) {
       <div>
         <label htmlFor="name">Full Name</label>
         <input
+          id="name"
           name="name"
           value={inputValue}
           onChange={(e) => handleNameChange(e)}

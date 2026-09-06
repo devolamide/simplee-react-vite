@@ -19,7 +19,7 @@ function Card({ cardData }) {
   }
 
   return (
-    <article className="card brdr-radius ovf-hidden bg-white">
+    <article className="card brdr-radius ovf-hidden">
       <div className="card__badge">New</div>
       <div className="card__image-wrapper">
         <img
